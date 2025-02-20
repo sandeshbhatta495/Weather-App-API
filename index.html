@@ -12,26 +12,65 @@
             <h1>Weather App</h1>
         </header>
         
+        <!-- Search Section -->
         <section class="search-section">
             <div class="search-box">
                 <input type="text" id="cityInput" placeholder="Enter city name">
                 <button id="searchBtn">Search</button>
+                <button id="locationBtn">📍 Use My Location</button>
             </div>
+            <div id="errorMessage" class="error"></div>
         </section>
         
+        <!-- Weather Display Section -->
         <section class="weather-display">
             <div class="weather-info">
                 <h2 id="cityName">City Name</h2>
                 <img id="weatherIcon" src="" alt="Weather Icon">
                 <h3 id="temperature">--°C</h3>
                 <p id="description">Weather Description</p>
+                <p><strong>Humidity:</strong> <span id="humidity">--%</span></p>
+                <p><strong>Wind Speed:</strong> <span id="windSpeed">-- km/h</span></p>
             </div>
+            <div class="loading-spinner" id="loadingSpinner"></div>
         </section>
-        
+
+        <!-- Hourly Forecast -->
+        <section class="hourly-forecast">
+            <h3>Hourly Forecast</h3>
+            <div id="hourlyWeather"></div>
+        </section>
+
+        <!-- Weekly Forecast -->
+        <section class="weekly-forecast">
+            <h3>5-Day Forecast</h3>
+            <div id="weeklyWeather"></div>
+        </section>
+
+        <!-- Weather Tips -->
+        <section class="weather-tips">
+            <h3>Weather Tips</h3>
+            <p id="weatherTip">Stay hydrated and wear light clothing on hot days!</p>
+        </section>
+
+        <!-- Search History -->
+        <section class="history-section">
+            <h3>Recent Searches</h3>
+            <ul id="searchHistory"></ul>
+        </section>
+
+        <!-- Footer -->
         <footer>
+            <p>Prepared by Sandesh Bhatta</p>
             <p>&copy; 2025 Weather App</p>
+            <div class="social-media">
+                <a href="#">Facebook</a> | 
+                <a href="#">Twitter</a> | 
+                <a href="#">Instagram</a>
+            </div>
         </footer>
     </div>
     <script src="script.js"></script>
 </body>
 </html>
+
