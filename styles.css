@@ -1,52 +1,83 @@
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
     text-align: center;
-    background-color: #f4f4f4;
+    background: linear-gradient(135deg, #74ebd5, #acb6e5);
+    transition: background 0.5s ease-in-out;
+    margin: 0;
+    padding: 0;
 }
 
+/* Container */
 .container {
-    width: 300px;
-    margin: 50px auto;
+    max-width: 500px;
+    margin: auto;
     background: white;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
+/* Search Box */
 .search-box {
-    margin-bottom: 20px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 10px;
 }
 
-input {
+input, button {
     padding: 10px;
-    width: 70%;
-    border: 1px solid #ccc;
+    font-size: 16px;
+    border: none;
     border-radius: 5px;
 }
 
 button {
-    padding: 10px;
-    background: #007BFF;
-    color: white;
-    border: none;
-    border-radius: 5px;
     cursor: pointer;
+    background: #3498db;
+    color: white;
 }
 
 button:hover {
-    background: #0056b3;
+    background: #2980b9;
 }
 
-.weather-info {
+/* Weather Display */
+.weather-display {
     margin-top: 20px;
 }
 
-img {
-    width: 100px;
+/* Hourly Forecast */
+.hourly-forecast, .weekly-forecast, .weather-tips, .history-section {
+    margin-top: 20px;
+    padding: 10px;
+    background: #f0f0f0;
+    border-radius: 10px;
 }
 
+.hourly-forecast div, .weekly-forecast div {
+    display: flex;
+    justify-content: space-around;
+    padding: 5px;
+}
+
+/* Footer */
 footer {
     margin-top: 20px;
-    font-size: 12px;
-    color: #777;
+    padding: 10px;
+    background: #333;
+    color: white;
+    border-radius: 5px;
 }
+
+.social-media a {
+    color: white;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+.social-media a:hover {
+    text-decoration: underline;
+}
+
