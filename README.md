@@ -34,10 +34,6 @@ A simple and interactive weather application that allows users to check real-tim
 - Scroll down to view hourly and weekly forecasts.
 - Check search history for past searches.
 
-## Screenshots
-
-
-
 ## Contributing
 
 Feel free to fork this project, add improvements, and create pull requests.
